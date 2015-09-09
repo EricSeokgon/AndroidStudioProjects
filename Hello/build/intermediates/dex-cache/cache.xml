@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\sklee\AndroidStudioProjects\Hello\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\sklee\AndroidStudioProjects\Hello\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-dfcbb47a6876a15437ce39850f4d158159ad9b21.jar" />
+    </item>
+    <item
+        jar="C:\Users\sklee\AndroidStudioProjects\Hello\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\sklee\AndroidStudioProjects\Hello\app\build\intermediates\pre-dexed\debug\classes-692e77bc800398f52c5c4e1594eb8289c8fc15ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\sklee\AndroidStudioProjects\Hello\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\sklee\AndroidStudioProjects\Hello\app\build\intermediates\pre-dexed\debug\classes-390a40f1a459c324f2f6774819e52c44ec45c46b.jar" />
+    </item>
+    <item
+        jar="C:\Users\sklee\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\sklee\AndroidStudioProjects\Hello\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-3843237bd526751071d5d8cd8bf4731cd675a167.jar" />
+    </item>
+
+</items>
