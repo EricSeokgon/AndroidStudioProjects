@@ -14,7 +14,7 @@ public class NewActivity extends AppCompatActivity {
     }
 
     public void onButton1Clicked(View v){
-        Toast.makeText(getApplicationContext(), "버튼이 눌렸어요.", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "돌아가기 버튼이 눌렸어요.", Toast.LENGTH_LONG).show();
 
         finish();
     }
