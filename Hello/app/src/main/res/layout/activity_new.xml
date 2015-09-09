@@ -9,14 +9,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="네이버 접속하기"
+        android:text="돌아가기"
         android:id="@+id/button"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="onButton1Clicked" />
 
-    <Button
+    Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="전화걸기"
@@ -25,14 +25,4 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="onButton2Clicked" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="새화면띄우기"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="onButton3Clicked" />
 </RelativeLayout>
