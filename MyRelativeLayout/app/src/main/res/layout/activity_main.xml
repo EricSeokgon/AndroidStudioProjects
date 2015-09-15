@@ -9,14 +9,19 @@
         android:layout_alignParentTop="true"
         android:text="New Button" />
 
-    <TextView
-        android:id="@+id/textView"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/button2"
-        android:layout_below="@+id/button"
-        android:background="#ff0000ff"
-        android:text="@string/hello_world" />
+        android:layout_below="@+id/button">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff0000ff"
+            android:text="@string/hello_world" />
+    </ScrollView>
 
     <Button
         android:id="@+id/button2"
