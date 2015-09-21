@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.sub_layout, container, true);
+
+        Button button = (Button) container.findViewById(R.id.button2);
+        button.setOnClickListener((new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "부분화면의 버튼이 눌렸습니다.", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
