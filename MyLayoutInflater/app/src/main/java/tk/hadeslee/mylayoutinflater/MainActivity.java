@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.layout.sub_layout, container, true);
 
         Button button = (Button) container.findViewById(R.id.button2);
-        button.setOnClickListener((new View.OnClickListener() {
-
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "부분화면의 버튼이 눌렸습니다.", Toast.LENGTH_LONG).show();
