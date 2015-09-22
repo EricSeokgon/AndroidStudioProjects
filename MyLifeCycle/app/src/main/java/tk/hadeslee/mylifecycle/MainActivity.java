@@ -1,7 +1,9 @@
 package tk.hadeslee.mylifecycle;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -31,12 +33,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         Toast.makeText(getApplicationContext(), "onPause() 호출됨. ", Toast.LENGTH_LONG).show();
+
+        saveScore();
+
         super.onPause();
     }
 
     @Override
     protected void onResume() {
         Toast.makeText(getApplicationContext(), "onResume() 호출됨. ", Toast.LENGTH_LONG).show();
+        loadScore();
         super.onResume();
     }
 
@@ -44,6 +50,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         Toast.makeText(getApplicationContext(), "onStart() 호출됨. ", Toast.LENGTH_LONG).show();
         super.onStart();
+    }
+
+    private void saveScore() {
+        SharedPreferences pref = getSharedPreferences("gostop", Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putInt("score", 10000);
+        editor.commit();
+    }
+
+    private void loadScore() {
+        SharedPreferences pref = getSharedPreferences("gostop", Activity.MODE_PRIVATE);
+        int score = pref.getInt("score", 0);
+        Toast.makeText(getApplicationContext(), "읽어온 점수 :" + score, Toast.LENGTH_LONG).show();
     }
 
     @Override
